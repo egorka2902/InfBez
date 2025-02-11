@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.49,maximum-scale=1.1,user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+    <video id="video-back" autoplay muted loop>
+        <source src="https://play.vsthemes.org/fhd/63/5263.webm" type="video/webm">
+    </video>
+    <h1>Тестирование по ИБ</h1>
+    <form id="quizForm">
+        <div id="questions">
+            <h2>Что такое VPN?</h2><br>
+            <select name="q1">
+                <option value="1">1) Виртуальная частная сеть</option>
+                <option value="2">2) Антивирусная программа</option>
+                <option value="3">3) Брандмауэр</option>
+                <option value="4">4) Сервис резервного копирования</option>
+            </select>
+        </div>
+        <div id="questions">
+            <h2>Как называется процесс проверки подлинности пользователя перед предоставлением доступа?</h2><br>
+            <select name="q2">
+                <option value="1">1) Аудит</option>
+                <option value="2">2) Аутентификация</option>
+                <option value="3">3) Авторизация</option>
+                <option value="4">4) Мониторинг</option>
+            </select>
+        </div>
+        <div id="questions">
+            <h2>Что такое "Zero Trust" в контексте безопасности?</h2><br>
+            <select name="q3">
+                <option value="1">1) Использование только локальных сетей</option>
+                <option value="2">2) Подход, предполагающий недоверие ко всем пользователям</option>
+                <option value="3">3) Открытие всех систем для общего доступа</option>
+                <option value="4">4) Полное отсутствие защиты</option>
+            </select>
+        </div>
+        <div id="questions">
+            <h2>Какой протокол используется для защиты веб-трафика?</h2><br>
+            <select name="q4">
+                <option value="1">1) HTTP</option>
+                <option value="2">2) FTP</option>
+                <option value="3">3) HTTPS</option>
+                <option value="4">4) SMTP</option>
+            </select>
+        </div>
+        <div id="questions">
+            <h2>Какая технология помогает предотвратить несанкционированный доступ к сети Wi-Fi?</h2><br>
+            <select name="q5">
+                <option value="1">1) VPN</option>
+                <option value="2">2) HTTP</option>
+                <option value="3">3) FTP</option>
+                <option value="4">4) WPA3</option>
+            </select>
+        </div>
+        <button type="button" onclick="checkAnswers()">Проверить</button>
+    </form>
+
+    <div id="result" style="margin-top: 20px; font-size: 1.2em;background-color: rgb(71, 71, 71);"></div>
+
+    <script>
+        // Правильные ответы
+        const correctAnswers = {
+            q1: "1", // Правильный ответ на вопрос 1
+            q2: "2", // Правильный ответ на вопрос 2
+            q3: "2", // Правильный ответ на вопрос 3
+            q4: "3", // Правильный ответ на вопрос 4
+            q5: "4"  // Правильный ответ на вопрос 5
+        };
+
+        function checkAnswers() {
+            const form = document.getElementById("quizForm");
+            let correctCount = 0;
+
+            for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+                const selectedAnswer = form.elements[question].value;
+                if (selectedAnswer === correctAnswer) {
+                    correctCount++;
+                }
+            }
+
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const percentage = (correctCount / totalQuestions) * 100;
+
+            // Выводим результат
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = `
+                <p>Правильных ответов: ${correctCount} из ${totalQuestions}</p>
+                <p>Результат: ${percentage.toFixed(2)}%</p>
+            `;
+        }
+    </script>
+</body>
+
+</html>

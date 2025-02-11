@@ -1,0 +1,221 @@
+body {
+    /*background: linear-gradient(black, rgb(17, 0, 116));*/
+    /*background: url('https://play.vsthemes.org/fhd/63/5263.webm');*/
+    background-position: absolute;
+    background-repeat: no-repeat;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    resize: none;
+    background-color: white;
+}
+#video-back {
+    margin-top: -5%;
+    margin-left: -0.9%;
+    position: fixed;
+    min-width: 105%;
+    min-height: 105%;
+    z-index: -1;
+    object-fit: cover;
+}
+h1 {
+    display: flex;
+    font-size: 40px;
+    color: white;
+    margin-top: top;
+    margin-left: 30px;
+    margin-right: 30px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+h2 {
+    font-size: 20px;
+    color: white;
+    text-indent: 50px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+h3 { 
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#kod-foto {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+    height: auto;
+    min-width: none;
+}
+#go-test-ib {
+    margin-bottom: 3%;
+    color: white;
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 2px gray solid;
+    background-color: transparent;
+    font-size: 35px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    bottom: 0;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4 {
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#site-text {
+    border: 2px gray solid;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    padding:10px;
+    color: white;
+}
+h5 {
+    bottom: 0;
+    color: white;
+    font-size: 10px;
+    user-select: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#doc-proect {
+    bottom: 0;
+    color: white;
+    font-size: 10px;
+    margin-left: 75%;
+    user-select: none;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    border: 2px gray solid;
+    background-color: transparent;
+    width: 90px;
+    height: 35px;
+    /*margin-bottom: 2%;
+    margin-top: 20%;*/
+    margin-top: 10%;
+    margin-bottom: -3%;
+    left: 0;
+}
+#doc-ad {
+    position: flex;
+    margin-left: -27.5%;
+
+}
+#go-test-but {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+#questions {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+datalist {
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    backdrop-filter: blur(10px);
+
+}
+input  {
+    border: solid gray 2px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    color: white;
+    padding: 10px;
+}
+
+#check-ans {
+    display: flex;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    border: 2px solid gray;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#go-ans {
+    margin-top: 5%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#var-ans {
+    color: white;
+    border-radius: 10px;
+    border: solid 2px gray;
+    background-color: transparent;
+}
+select {
+    border: solid 2px gray;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    margin-top: 15px;
+    height: 30px;
+}
+option {
+    color: black;
+    background: transparent;
+}
+
+button {
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height: 30px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    margin-left: 47%;
+}
+#result {
+    font-size: 30px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px gray;
+}
+#p {
+    padding: 5px;
+}

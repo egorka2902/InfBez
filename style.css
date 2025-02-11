@@ -1,0 +1,59 @@
+#Z {
+    margin-top: -1%;
+    height: 70px;
+    background-color: rgb(61, 61, 61);
+    width: 110%;
+    position: absolute;
+    margin-left: -10%;
+    z-index: -1;
+
+}
+body {
+    overflow: hidden;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#search {
+    background-color: white;
+    height: 40px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 85%;
+    width: 15%;
+}
+#a1 {
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    margin-top: -1.6%;
+    margin-left: 2%;
+}
+#a2 {
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    margin-top: -1.6%;
+    margin-left: 9%;
+}
+#a3 {
+    height: 25px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    margin-top: -1.6%;
+    margin-left: 18%;
+}
+#V {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+img {
+    
+    height: 200px;
+    width: 200px;
+}
